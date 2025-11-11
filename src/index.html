@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- NORMALIZE CSS -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ADICIONADO FONTE ROBOTO -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- ADICIONADO FAVICON -->
+
+    <link rel="icon" type="image/png" href="./assets/img/favicon.ico">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+    <title>Administradores | TrackIt</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form action="./model/CadastrarUsuario.php" method="post" target="_self">
+                <h1>Criar uma conta</h1>
+                <input type="text" placeholder="Nome Completo" name="nome">
+                <input type="email" placeholder="Email" name="email">
+                <input type="password" placeholder="Senha" name="senha">
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form action="./model/Login.php" method="post" target="_self">
+                <h1>Entrar</h1>
+                <input type="email" placeholder="Email" name="userEmailLogin">
+                <input type="number" placeholder="Código" id="codigoVerificacao" name="codigoVerificacao">
+                <input type="password" placeholder="Senha" name="userSenhaLogin">
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Bem vindo de volta!</h1>
+                    <p>Insira seus dados pessoais para usar todos os recursos do site.</p>
+                    <button class="hidden" id="login">Entrar</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Ainda não tem uma conta?</h1>
+                    <p>Cadastre-se com seus dados pessoais para usar todos os recursos do site.</p>
+                    <button class="hidden" id="register">Cadastrar-se</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

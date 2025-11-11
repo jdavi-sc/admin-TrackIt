@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTE ROBOTO GOOGLE FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- NORMALIZE CSS -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- FAVICON -->
+
+    <link rel="icon" type="image/png" href="../assets/img/favicon.ico">
+
+
+    <!-- LINKANDO CSS -->
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/home.css">
+
+    <title>Bem vindo! | TrackIt</title>
+
+</head>
+
+<body>
+    <ul class="sidenav">
+        <li>
+            <a href="#" class="active">Proprietários</a>
+
+            <ul class="sublista">
+
+                <li>
+                    <a href="#">Consultar</a>
+                </li>
+
+                <li>
+                    <a href="../view/atualizarNomeProprietario.html">Atualizar Nome</a>
+                </li>
+
+                <li>
+                    <a href="../view/atualizarEmailProprietario.html">Atualizar E-mail</a>
+                </li>
+
+                <li>
+                    <a href="../view/atualizarSenhaProprietario.html">Atualizar Senha</a>
+                </li>
+
+                <li>
+                    <a href="../view/deletarProprietario.html">Deletar</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="../view/atualizarPlaca.html" class="topico">Veículos</a>
+
+            <ul class="sublista">
+                <li>
+                    <a href="../view/atualizarPlaca.html">Placa</a>
+                </li>
+                <li>
+                    <a href="../view/atualizarModelo.html">Modelo</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="../index.html" class="topico">Sair</a>
+        </li>
+    </ul>
+
+    <div class="content">
+        <div class="container-form">
+            <form action="../controller/adminController.php" method="post" target="_self">
+                <h1>Consultar</h1>
+                <input type="email" name="email" placeholder="E-mail"><br><br>
+                <input type="submit" name="requisicao" value="Consultar"><br><br>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
